@@ -28,7 +28,7 @@ sed -i "s/version.*/version = \"$new_version\"/g" $version_file
 sed -i "s/__version__.*/__version__ = \"$new_version\"/g" $init_file
 
 echo "新版本号：$new_version"
-
+#
 git diff
 git add $version_file
 git add $init_file
